@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vlad Y. - DevOps & Game Enthusiast</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card fade-in">
+      <h1>Hello, I’m Vlad Y.</h1>
+      <p>DevOps engineer and a game enthusiast.</p>
+      <canvas id="snakeGame" width="400" height="400"></canvas>
+      <div class="controls">
+        <button id="startBtn" class="btn">Start</button>
+        <button id="restartBtn" class="btn" disabled>Restart</button>
+        <div class="tooltip">
+          <span class="tooltip-icon">?</span>
+          <div class="tooltip-text">
+            <p><strong>Controls:</strong></p>
+            <p>Arrow keys to move the snake.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="https://github.com/vlad-yash" target="_blank" title="GitHub">
+        <div class="menu-circle">GitHub</div>
+      </a>
+      <a href="https://drive.google.com/drive/folders/1tNVSKI1WISIp663YFxd_9uFs8FB171HD?usp=sharing" target="_blank" title="Google Drive">
+        <div class="menu-circle">Drive</div>
+      </a>
+      <a href="javascript:void(0)" id="contactBtn" title="Contact">
+        <div class="menu-circle">Contact</div>
+      </a>
+      <a href="javascript:void(0)" id="thanksBtn" title="Thanks" class="thanks-button">
+        <div class="menu-circle">Thanks</div>
+      </a>
+    </nav>
+
+    <div id="thanks" class="thanks fade-in" style="display:none;">
+      <p>Special thanks to Ihor Kapatsila for mentorship and guidance!</p>
+    </div>
+
+    <div id="contact" class="contact fade-in" style="display:none;">
+      <p>Feel free to contact me at <strong>vlad.yash@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <script src="js/snake.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
